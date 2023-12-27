@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #018ABE;
+    text-align: center;
+}
+
+
+h1 {
+    padding-top: 20px;
+    font-size: 5vmin;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    font-size: 8vmin;
+    color: #02457A;
+    cursor: pointer;
+}
+
+.winner, win {
+    font-size: 8vmin;
+    color: #02457A;
+    display: hide;
+}
+
+#reset {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 150px;
+    margin: 7px;
+    color: #ffffff;
+    background-color: #36a2eb;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
+    cursor: pointer;
+}
