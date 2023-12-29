@@ -5,14 +5,20 @@
 }
 
 body {
-    background-color: #018ABE;
+    background-color: #FFC98B;
     text-align: center;
 }
 
 
 h1 {
+    color: #FFF;
     padding-top: 20px;
     font-size: 5vmin;
+}
+
+#title {
+    color: #FFC98B;
+    -webkit-text-stroke: 3px #FFF;
 }
 
 .container {
@@ -39,13 +45,14 @@ h1 {
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     font-size: 8vmin;
-    color: #02457A;
+    color: #f5bd7d;
     cursor: pointer;
 }
 
-.winner, win {
+.winner,
+win {
     font-size: 8vmin;
-    color: #02457A;
+    color: #FFF;
     display: hide;
 }
 
@@ -56,12 +63,34 @@ h1 {
     padding: 14px;
     width: 150px;
     margin: 7px;
-    color: #ffffff;
-    background-color: #36a2eb;
+    font-size: 1.2rem;
+    color: #ffc98b;
+    background-color: #FFF;
     border-radius: 8px;
     font-family: "proxima-nova-soft", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     transition: box-shadow 200ms ease-out;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+
+    .container {
+        height: 50vh;
+    }
+
+    .game {
+        height: 70vmin;
+        width: 80vmin;
+    }
+
+    .box {
+        height: 6rem;
+        width: 6rem;
+    }
 }
