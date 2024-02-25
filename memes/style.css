@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e1e1fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    padding: 30px;
+    background-color: #fff;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.meme-card>img {
+    height: 400px;
+    width: 400px;
+}
+
+.meme-card .btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.meme-card .btns button {
+    border: none;
+    background-color: #e1e1fc;
+    padding: 12px 16px;
+    font-size: 18px;
+    color: gray;
+    border-radius: 12px;
+}
+
+.meme-card .btns button:active {
+    color: #010101;
+    background-color: #d6d6f9;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 75%;
+        padding: 16px;
+        margin-top: 20px;
+    }
+
+    .meme-card>img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .meme-card .btns {
+        flex-direction: column;
+        margin: 12px 0;
+    }
+
+    .meme-card .btns button {
+        font-size: 16px;
+        color: #444;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .meme-card>img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .meme-card .btns button {
+        font-size: 14px;
+    }
+}

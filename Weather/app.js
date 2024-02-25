@@ -31,6 +31,7 @@ async function fetchWeatherData(cityName) {
 
 // Function to update UI with weather data
 function updateUI(weatherData) {
+  console.log(weatherData);
   cityElement.innerHTML = weatherData.name;
   tempElement.innerHTML = weatherData.main.temp;
   humidityElement.innerHTML = weatherData.main.humidity;
